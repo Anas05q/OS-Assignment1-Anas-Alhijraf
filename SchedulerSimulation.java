@@ -178,7 +178,7 @@ public class SchedulerSimulation {
     public static void main(String[] args) {
         // ⚠️ IMPORTANT: Put your student ID here to seed the random number generator
         // This makes your output unique to you - DO NOT forget to change this!
-        int studentID = 445050054;  // ← CHANGE THIS TO YOUR ACTUAL STUDENT ID
+        int studentID = 445050054;  
         
         Random random = new Random(studentID);
         
@@ -229,6 +229,8 @@ public class SchedulerSimulation {
         for (int i = 1; i <= numProcesses; i++) {
             // Random burst time for each process between timeQuantum/2 and 3*timeQuantum
             int burstTime = timeQuantum/2 + random.nextInt(2 * timeQuantum + 1);
+
+            // Feature 1: Assign a random priority from 1 to 10
             int priority = 1 + random.nextInt(10);
             // Create a new process object with a unique name, burst time, and the defined time quantum
             Process process = new Process("P" + i, burstTime, timeQuantum, priority);
@@ -271,6 +273,8 @@ public class SchedulerSimulation {
             }
             System.out.println(Colors.BRIGHT_WHITE + "]" + Colors.RESET);
             System.out.println(Colors.BOLD + Colors.MAGENTA + "└" + "─".repeat(79) + Colors.RESET + "\n");
+
+            // Feature 2: Count each context switch before starting a thread
                contextSwitches++;
             // Start the thread, which will run the process for one time quantum
             currentThread.start();
@@ -307,6 +311,7 @@ public class SchedulerSimulation {
         System.out.printf("%-15s %-15s %-18s %-18s%n",
         "Process Name", "Burst Time", "Waiting Time", "Turnaround Time");
 
+        // Feature 3: Display waiting time and turnaround time for each process
         for (Process p : allProcesses) {
         long waitingTime = p.getTotalWaitingTime();
         long turnaroundTime = waitingTime + p.getBurstTime();

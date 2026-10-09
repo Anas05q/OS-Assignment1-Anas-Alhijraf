@@ -29,11 +29,11 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
-| **Repository Link** | [Paste your repository link here] |
+| **Full Name** | [Anas Saeed Ali Alhijraf] |
+| **Student ID** | [445050054] |
+| **University Email** | [445050054]@std.psau.edu.sa |
+| **GitHub Username** | [Anas05q] |
+| **Repository Link** | [https://github.com/Anas05q/OS-Assignment1-Anas-Alhijraf] |
  
 ---
 
@@ -129,68 +129,84 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
 
-**Details**:
+ ### Entry 1 - [October 3, 2026]
 
-**Challenges**:
+**What I did:** Set up the assignment repository on GitHub.
 
-**Solution**:
+**Details:**
+- Forked the starter repository to my GitHub account.
+- Prepared the project for working in VS Code.
+- Started reviewing the assignment requirements.
 
-**Time spent**:
+**Challenges:** I needed to understand how to set up the repository and start working with the provided code.
 
----
+**Solution:** I followed the setup steps and checked the project files.
 
-### Entry 2 - [Date and Time]
-**What I did**:
+**Time spent:** Approximately 1 hour.
 
-**Details**:
 
-**Challenges**:
+ ### Entry 2 - [October 4, 2026]
 
-**Solution**:
+**What I did:** Implemented Feature 1: Process Priority.
 
-**Time spent**:
+**Details:**
+- Added a priority field to the Process class.
+- Generated a random priority between 1 and 10 for each process.
+- Updated the ready queue output to display the priority.
+- Committed the changes to GitHub.
 
----
+**Challenges:** I needed to understand how to add a new field to the Process class without changing the scheduling order.
 
-### Entry 3 - [Date and Time]
-**What I did**:
+**Solution:** I added the priority to the constructor and displayed it when the process entered the ready queue, while keeping the scheduling order unchanged.
 
-**Details**:
+**Time spent:** Approximately 2 hours.
 
-**Challenges**:
 
-**Solution**:
 
-**Time spent**:
+### Entry 3 - [October 6, 2026]
 
----
+**What I did:** Implemented Feature 2: Context Switch Counter.
 
-### Entry 4 - [Date and Time]
-**What I did**:
+**Details:**
+- Added a static variable named `contextSwitches`.
+- Incremented the counter before each `currentThread.start()`.
+- Displayed the total number of context switches at the end of the simulation.
+- Tested the feature and committed it to GitHub.
 
-**Details**:
+**Challenges:** I needed to find the correct place to increment the counter.
 
-**Challenges**:
+**Solution:** I reviewed the scheduling loop and placed `contextSwitches++` before `currentThread.start()`.
 
-**Solution**:
+**Time spent:** Approximately 2 hours.
 
-**Time spent**:
+### Entry 4 - [October 8, 2026]
 
----
+**What I did:** Implemented Feature 3: Waiting Time Tracking.
+
+**Details:**
+- Added variables to track the waiting time of each process.
+- Used `System.currentTimeMillis()` to calculate waiting time.
+- Created a summary table showing Burst Time, Waiting Time, and Turnaround Time.
+- Ran the program and checked the results.
+- Committed the feature to GitHub.
+
+**Challenges:** I needed to understand how to calculate waiting time correctly when a process returns to the ready queue.
+
+**Solution:** I recorded when each process entered the ready queue and calculated its waiting time before execution.
+
+**Time spent:** Approximately 4 hours. 
 
 ### Entry 5 - [Date and Time]
-**What I did**:
+**What I did**: Worked on the assignment documentation in MY_WORK.md.
 
-**Details**:
+**Details**: Completed the reflection questions and technical answers about threads, Round-Robin scheduling, the ready queue, and real-world applications.
 
-**Challenges**:
+**Challenges**: Understanding some thread states and explaining how the simulation works.
 
-**Solution**:
+**Solution**: Reviewed the Java code and simulation output to understand the concepts better.
 
-**Time spent**:
+**Time spent**: 2 hours
 
 ---
 
@@ -211,13 +227,13 @@
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [10-12]
 
-**Most challenging part**:
+**Most challenging part**: The most challenging part was implementing waiting time tracking because I needed to understand when each process enters the ready queue and starts execution.
 
-**Most interesting learning**:
+**Most interesting learning**: I learned how Round-Robin scheduling works and how Java threads can simulate CPU execution and context switches.
 
-**What I would do differently next time**:
+**What I would do differently next time**: I would review the code more carefully before making changes and test each feature separately to find errors more easily.
 
 ---
 
@@ -237,7 +253,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I learned that multithreading allows a program to use multiple threads to perform tasks. In this assignment, I used Java threads to simulate processes in a Round-Robin scheduler. I learned that `Thread.start()` starts a thread and `Thread.join()` makes the main thread wait for it to finish. I also learned that `Thread.sleep()` can simulate CPU execution time. Each process gets a time quantum, and unfinished processes return to the ready queue. This assignment helped me understand how threads and CPU scheduling work together]
 
 ## Question 2: What was the most challenging part of this assignment?
 
@@ -245,7 +261,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[The most challenging part of this assignment was implementing the waiting time feature. At first, I found it difficult to understand how to calculate the waiting time for each process. I needed to track when a process entered the ready queue and when it started running. It was also important to avoid counting CPU execution time as waiting time. I reviewed the code and added the required variables step by step. After testing the program, I was able to display the waiting time and turnaround time for all processes]
 
 ## Question 3: How did you overcome the challenges you faced?
 
@@ -253,7 +269,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I overcame the challenges by working on the assignment step by step. First, I reviewed the code to understand how the scheduler works. When I had difficulty understanding a feature, I asked for help and reviewed the explanation. I made small changes instead of modifying the entire program at once. After implementing the features, I ran the program and checked the output. This approach helped me complete the assignment and understand the code better.]
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -261,7 +277,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[Multithreading can be used in many real-world applications. For example, a web browser can use different threads to load pages and handle user actions. Video games can use threads for tasks such as sound and background loading. This helps applications remain responsive while performing multiple tasks. In my assignment, I learned how threads can be used to simulate CPU scheduling. I can apply this knowledge when developing programs that need to manage several tasks efficiently]
 
 ### Optional: What would you like to learn more about?
 
@@ -293,7 +309,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[A process is an independent program with its own memory, while a thread is a smaller unit of execution that shares memory with other threads in the same process. Threads are usually faster to create and require fewer resources than separate processes. In my assignment, the `Process` class represents a simulated process, not a real operating system process. The `addProcessToQueue()` method uses `new Thread(process)` to create a Java thread for each execution. We used threads because they are easier to manage and allow us to simulate Round-Robin scheduling within one Java program.]
 
 ## Question 2: Ready Queue Behavior
 
@@ -305,15 +321,15 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[In Round-Robin scheduling, if a process does not finish within its time quantum, it returns to the ready queue. In my simulation, process P3 had a burst time of 7090 ms. P3 was re-queued one time before it finished. Re-queueing allows other processes to use the CPU instead of waiting for one process to finish completely. This makes CPU scheduling fairer for all processes]
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+[P3 added to ready queue | Burst time: 7090ms | Priority: 7]
 ```
 
 **Explanation of example:**
-[Explain what is happening in the output snippet you pasted.]
+[This line shows P3 being added to the ready queue. It appeared twice in my output: once when P3 was first created and once when it was re-queued after using its time quantum]
 
 ## Question 3: Thread Lifecycle
 
@@ -323,15 +339,15 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New**: [P1's thread is created using new Thread(process) inside addProcessToQueue()]
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: [When currentThread.start() is called, P1's thread enters the RUNNABLE state]
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: [The CPU executes P1's run() method. In Java, running is included in the RUNNABLE state]
 
-4. **Waiting**: [When and why would a thread be Waiting?]
+4. **Waiting**: [When P1 calls Thread.sleep(), it enters TIMED_WAITING temporarily. Meanwhile, the main thread waits for P1 using Thread.join()]
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: [When P1's run() method finishes, that thread enters the TERMINATED state]
 
 ## Question 4: Real-World Applications
 
@@ -344,29 +360,29 @@ Example from my output:
 ### Example 1 (operating-system level): [Name of scenario]
 
 **Description**:
-[Describe the real-world scenario.]
+[An operating system manages multiple running programs that need CPU time. Round-Robin scheduling can give each runnable task a fixed time quantum. If a task does not finish, it returns to the ready queue.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[This approach improves fairness because tasks take turns using the CPU. A context switch allows the CPU to move from one task to another, similar to my simulation.]
 
 ### Example 2: [Name of application/scenario]
 
 **Description**:
-[Describe the real-world scenario or application.]
+[A web server uses threads to handle requests from different users. Round-Robin scheduling can give each runnable thread a time quantum to perform CPU work. If a thread needs more CPU time, it can continue during another turn.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[This helps prevent one CPU-intensive request from using the CPU for too long. It improves responsiveness and gives other runnable threads a fair chance to execute.]
 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1.
-2.
-3.
+1. The difference between processes and threads.
+2. How Round-Robin scheduling uses the ready queue and time quantum.
+3. How context switching and thread lifecycle work.
 
 **Concepts I need to study more:**
-1.
-2.
+1. How Java manages different thread states.
+2. How operating systems perform context switching in real situations.
 
 ---
 
@@ -408,3 +424,4 @@ Example from my output:
 - [ ] Submit **only** the link to your public GitHub repository
 
 > 🎯 **Good luck!** Start early, commit regularly, and make sure you can explain every line you submit.
+
