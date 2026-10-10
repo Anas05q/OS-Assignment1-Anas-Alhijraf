@@ -39,7 +39,7 @@
 
 ## 🎥 Video Link
 
-**Video Link**: [Paste your video link here]
+**Video Link**: [https://youtu.be/uaBtI_e30OA]
 
 > ⚠️ **WARNING:** The video must be **publicly accessible** ("Anyone with the link can view") on **Google Drive**, **YouTube (Unlisted or Public)** or any other cloud file-sharing system. A private, restricted or broken link counts as a **missing video (-1 mark)**.
 >
@@ -408,17 +408,17 @@ Example from my output:
 - [ ] Everything is **pushed** to GitHub
 
 **This file (`MY_WORK.md`)**
-- [ ] Full name and student ID filled in at the top
-- [ ] Development log has **5+ entries** on different dates
-- [ ] Reflection: 4 questions, 5-7 sentences each
-- [ ] Technical answers: 4 questions, 3-5 sentences each, with examples from **your** output
-- [ ] No `[...]` placeholders left
-- [ ] No section headers deleted
+- [x] Full name and student ID filled in at the top
+- [x] Development log has **5+ entries** on different dates
+- [x] Reflection: 4 questions, 5-7 sentences each
+- [x] Technical answers: 4 questions, 3-5 sentences each, with examples from **your** output
+- [x] No `[...]` placeholders left
+- [x] No section headers deleted
 
 **Video**
-- [ ] 2-3 minutes long, named `StudentID_Assignment1_Demo.mp4`
-- [ ] Shows your name, ID, repository, 3 features, IDE execution, one threading concept, and commit history
-- [ ] Link is **public** (tested in an incognito window) and pasted in the **Video Link** section above
+- [x] 2-3 minutes long, named `StudentID_Assignment1_Demo.mp4`
+- [x] Shows your name, ID, repository, 3 features, IDE execution, one threading concept, and commit history
+- [x] Link is **public** (tested in an incognito window) and pasted in the **Video Link** section above
 
 **Blackboard**
 - [ ] Submit **only** the link to your public GitHub repository
